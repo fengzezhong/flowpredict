@@ -1,0 +1,25 @@
+[2020-09-15 15:29:28,977] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:30:37,094] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:30:52,326] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:31:23,718] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:31:49,395] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:33:09,449] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:33:45,006] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 15:33:51,233] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-15 15:33:52,320] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2020-09-15 15:33:52,321] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 179
+[2020-09-15 15:34:12,725] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /healthcheck.do HTTP/1.1" 200 67
+[2020-09-15 15:34:22,836] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /warn_realtion HTTP/1.1" 200 67
+[2020-09-15 15:34:33,923] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /get_resu_process HTTP/1.1" 200 84
+[2020-09-15 15:34:38,949] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /get_resu_process HTTP/1.1" 200 84
+[2020-09-15 15:34:55,245] [log.py:230] [log:log_response] [WARNING]- Not Found: /static/upload
+[2020-09-15 15:34:55,246] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /static/upload HTTP/1.1" 404 179
+[2020-09-15 15:35:27,954] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/upload/lteFlowOfCity5Min_anshun_guanling.csv HTTP/1.1" 200 45311
+[2020-09-15 15:35:44,686] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /get_download_resu HTTP/1.1" 200 84
+[2020-09-15 15:35:53,166] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /upload_file HTTP/1.1" 200 128
+[2020-09-15 15:44:29,997] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/urls.py changed, reloading.
+[2020-09-15 15:44:31,008] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 16:35:20,355] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-15 16:49:34,408] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-15 16:49:35,510] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-15 17:02:57,421] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/core/warn_realation.py changed, reloading.

@@ -1,0 +1,10 @@
+version: '2'   # compose-file的语法版本
+services:    # 定义服务
+  web:      # 指定服务1 web
+    build: .    # 使用当前目录下的Dockerfile构建镜像
+    ports:    # 指定端口映射
+      - "8071:8071"
+    container_name: warn_relaction  # 容器名称 container_name+services_name 会作为镜像名称
+  #redis:
+  #  image: redis
+  #  container_name: redis

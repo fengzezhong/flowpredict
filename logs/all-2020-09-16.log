@@ -1,0 +1,19 @@
+[2020-09-16 10:05:19,192] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:05:58,668] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:06:22,182] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-16 10:06:22,833] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:06:35,029] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:06:39,736] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-16 10:06:40,450] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2020-09-16 10:06:40,450] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 179
+[2020-09-16 10:07:03,848] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /healthcheck.do HTTP/1.1" 200 67
+[2020-09-16 10:07:47,198] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /get_flow HTTP/1.1" 200 67
+[2020-09-16 10:09:12,783] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /get_flow?warn_data_url=127.0.0.1/static/csv/warn_tail_30w.csv HTTP/1.1" 200 67
+[2020-09-16 10:12:48,259] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-16 10:13:43,578] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-16 10:29:06,038] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/core/systen_unit.py changed, reloading.
+[2020-09-16 10:29:07,007] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:30:33,190] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-16 10:30:34,015] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-16 10:31:55,746] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/warn_relaction_interface/flow_predict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-16 10:31:56,494] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
