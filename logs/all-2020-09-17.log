@@ -719,3 +719,15 @@ NameError: name 'req' is not defined
 [2020-09-17 13:09:08,280] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 84
 [2020-09-17 13:09:09,898] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 84
 [2020-09-17 13:09:15,598] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 353
+[2020-09-17 13:14:45,635] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-17 13:14:46,653] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-17 13:14:51,008] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-17 13:15:53,085] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-17 13:15:53,090] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-17 13:17:48,928] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 364
+[2020-09-17 13:18:26,023] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 364
+[2020-09-17 13:20:01,955] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-17 13:20:01,956] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-17 13:20:04,722] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 728
+[2020-09-17 13:22:06,330] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-17 13:22:08,948] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81

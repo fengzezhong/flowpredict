@@ -17,6 +17,7 @@ file_name = work_id + ".csv"
 
 print(file_name)
 
+
 def start(req):
     return HttpResponse(json.dumps({
         "success": True,
@@ -26,7 +27,6 @@ def start(req):
 
 # 请求告警回应
 def get_predict_flow(req):
-
     if req.method == "POST":
         req_data = json.loads(req.body)
         work_id = req_data['work_id']
@@ -199,9 +199,6 @@ def handle_uploaded_file(f, file_name):
             destination.write(chunk)
 
 
-
-
-
 def FileUp(request):
     if request.method == 'POST':
 
@@ -215,6 +212,7 @@ def FileUp(request):
                 "code": 200,
                 "msg": "upload success",
                 "body": {
+                    "work_id": work_id,
                     "file_url": "static/upload/" + file_name,
                     "ret": "6000"
                 }
