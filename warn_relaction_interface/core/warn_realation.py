@@ -23,16 +23,20 @@ if not os.path.exists(predictdatapath):
     os.mkdir(preparedatapath)
 
 
-def file_deal(input_file, file_name, work_id):
+def file_handle_and_predict(input_path, file_name, work_id):
     try:
         with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
             print("[" + work_id + "]" + " 开始任务：", file=f)
 
-        suffix = str(os.path.join(input_file, file_name)).split(".")[-1]
+
+        suffix = str(os.path.join(input_path, file_name)).split(".")[-1]
 
         if suffix == 'csv':
 
-            pd_data = pd.read_csv(os.path.join(input_file, file_name))
+            flow_file_path = os.path.join(input_path, file_name)
+            print(flow_file_path)
+            pd_data = pd.read_csv(flow_file_path)
+            print(pd_data.head(5))
 
             pd_data['流量'] = pd_data['流量'] / 1024
             print(pd_data.head(5))
@@ -77,7 +81,7 @@ def file_deal(input_file, file_name, work_id):
             print("RMSE by hand:", sum_erro)
 
             # 获取要预测的数据
-            parepare_data(input_file, file_name)
+            parepare_data(input_path, file_name)
             pre_data = pd.read_csv(os.path.join(settings.PAREPRE_URL, file_name))
             print(pre_data.head(5))
             #
@@ -107,8 +111,8 @@ def file_deal(input_file, file_name, work_id):
 
 
 # 根据最后数据，获取接下来一天的数据
-def parepare_data(input_file, file_name):
-    file = os.path.join(input_file, file_name)
+def parepare_data(input_path, file_name):
+    file = os.path.join(input_path, file_name)
 
     f = open(file).readlines()
     f_len = len(f)
@@ -225,7 +229,7 @@ def predict_flow(file_name):
 
     arr = np.array(XX)
 
-    with open(predictdatapath + 'line_' + file_name, 'a+') as f:
+    with open(predictdatapath  + file_name, 'a+') as f:
         for i in range(len(y_pred)):
             f.write(str(arr[i][0]) + ':' + str(y_pred[i] * 1024) + ', ')
 

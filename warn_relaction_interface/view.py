@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from . import settings
-from .core.warn_realation import file_deal
-from .core.flowpredict import predict_flow
+from .core.warn_realation import file_handle_and_predict
 from .core import systen_unit as su
 import threading
 import os
@@ -11,6 +10,12 @@ import logging
 
 logger = logging.getLogger('log')
 
+from uuid import uuid4
+
+work_id = str(uuid4())
+file_name = work_id + ".csv"
+
+print(file_name)
 
 def start(req):
     return HttpResponse(json.dumps({
@@ -20,60 +25,48 @@ def start(req):
 
 
 # 请求告警回应
-def warn_realtion(req):
-    work_id = su.get_unique_str()
+def get_predict_flow(req):
 
-    if req.method == "POST" and req.body != None:
+    if req.method == "POST":
+        req_data = json.loads(req.body)
+        work_id = req_data['work_id']
 
         try:
-            down_un = su.download_unit()
 
-            req_para = json.loads(req.body)
-            print(req_para)
-            warn_data_url = str(req_para["warn_data_url"])
-            upload_url = str(req_para["warn_data_url"])
-            if su.isURL(warn_data_url):
+            upload_url = os.path.join(settings.UPLOAD_URL, work_id + '.csv')
+            down_url = os.path.join(settings.DWON_RESU_URL, work_id + '.csv')
 
-                save_url = os.path.join(settings.DWON_RESU_URL, work_id + "." + str(warn_data_url).split(".")[-1])
-                predict_f = file_deal(settings.UPLOAD_URL, work_id + "." + str(warn_data_url).split(".")[-1], work_id)
+            predict_f = file_handle_and_predict(settings.UPLOAD_URL, work_id + ".csv", work_id)
 
-                down_thread = threading.Thread(target=down_un.download_file, args=(warn_data_url, save_url, work_id))
-                core_thread = threading.Thread(target=predict_f)
-                down_thread.start()
-                down_thread.join()
-                if down_un.get_result():
-                    logger.info("[" + work_id + "]:请求成功，任务开始启动")
-                    core_thread.start()
-                    return HttpResponse(json.dumps({
-                        "code": 200,
-                        "msg": "Check successed.",
-                        "body": {
-                            "ret": "4000",
-                            "pre_time": str(
-                                down_un.get_len() / 4000 + down_un.get_len() / 300000 + down_un.get_len() / 25000),
-                            "work_id": work_id,
-                            "download_url": upload_url.split("upload")[0] + "download/" + work_id + ".csv",
+            # down_thread = threading.Thread(target=down_un.download_file, args=(warn_data_url, upload_url, work_id))
+            core_thread = threading.Thread(target=predict_f)
 
-                        }
-                    }))
-                else:
-                    logger.error("[" + work_id + "]:没有告警文件下载url，或者告警文件url不合法，下载地址为" + str(warn_data_url))
-                    return HttpResponse(json.dumps({
-                        "code": 201,
-                        "msg": "warn file download address error",
-                        "body": {
-                            "ret": "4003"
-                        }
-                    }))
-            else:
-                logger.error("[" + work_id + "]:告警文件下载失败，或者告警文件不符合要求，下载地址为" + str(warn_data_url))
+            try:
+                core_thread.start()
+                logger.info("[" + work_id + "]:请求成功，任务开始启动")
+
                 return HttpResponse(json.dumps({
-                    "code": 201,
-                    "msg": "warn data download failed",
+                    "code": 200,
+                    "msg": "Check successed.",
                     "body": {
-                        "ret": "4001"
+                        "ret": "4000",
+                        # "pre_time": str(
+                        #     down_un.get_len() / 4000 + down_un.get_len() / 300000 + down_un.get_len() / 25000),
+                        "work_id": work_id,
+                        "download_url": upload_url.split("upload")[0] + "download/" + work_id + ".csv",
+
                     }
                 }))
+            except:
+                logger.error("[" + down_url + "]:没有告警文件下载url，或者告警文件url不合法，下载地址为" + str(down_url))
+                return HttpResponse(json.dumps({
+                    "code": 201,
+                    "msg": "warn file download address error",
+                    "body": {
+                        "ret": "4003"
+                    }
+                }))
+
         except Exception as e:
             logger.error("[" + work_id + "]:" + str(e))
             return HttpResponse(json.dumps({
@@ -95,10 +88,15 @@ def warn_realtion(req):
 
 def get_resu_process(req):
     if req.method == "POST":
-        req_para = json.loads(req.body)
+
+        req_para = json.loads(req.body.decode())
+        print(req_para)
         work_id = str(req_para["work_id"])
+        print(work_id)
+
         resu_file_url = os.path.join(settings.DWON_RESU_URL, work_id + ".csv")
         process_file_url = os.path.join(settings.PROCESS_URL, "process_" + work_id)
+
         if os.path.exists(resu_file_url):
             return HttpResponse(json.dumps({
                 "code": 200,
@@ -156,8 +154,6 @@ def get_resu_process(req):
 
 
 def FileDown(req):
-    # if req.method == "POST" and req.POST.get("data", "") != "":
-    #     req_para = json.loads(str(req.POST.get("data", "")))
     if req.method == "POST":
         req_para = json.loads(req.body)
         work_id = str(req_para["work_id"])
@@ -203,14 +199,17 @@ def handle_uploaded_file(f, file_name):
             destination.write(chunk)
 
 
-from uuid import uuid4
+
 
 
 def FileUp(request):
     if request.method == 'POST':
-        myFile = request.FILES.get("warn_file", None)
+
+        myFile = request.FILES.get("flow_file", None)
+
         if myFile:
-            file_name = str(uuid4()) + ".csv"
+            os.path.join(settings.UPLOAD_URL, file_name)
+
             handle_uploaded_file(myFile, file_name)
             return HttpResponse(json.dumps({
                 "code": 200,

@@ -20,44 +20,44 @@ class download_unit:
     def get_len(self):
         return self.length
 
-    def download_file(self, url, file_pname, work_id, chunk_size=1024 * 4):
-        try:
-            self.work_id = work_id
-            # 第二种
-            with requests.get(url, stream=True) as req:
-                if req.status_code == 200:
-                    with open(file_pname, 'wb') as f:
-                        for chunk in req.iter_content(chunk_size=chunk_size):
-                            if chunk:
-                                f.write(chunk)
-                    self.is_good_file(file_pname)
-                else:
-                    self._result = False
-        except Exception as e:
-            logger.error("[" + self.work_id + "] " + str(e))
-            self._result = False
+    # def download_file(self, url, file_pname, work_id, chunk_size=1024 * 4):
+    #     try:
+    #         self.work_id = work_id
+    #         # 第二种
+    #         # with requests.get(url, stream=True) as req:
+    #         # if req.status_code == 200:
+    #             with open(file_pname, 'wb') as f:
+    #                 for chunk in req.iter_content(chunk_size=chunk_size):
+    #                     if chunk:
+    #                         f.write(chunk)
+    #             # self.is_good_file(file_pname)
+    #         else:
+    #             self._result = False
+    #     except Exception as e:
+    #         logger.error("[" + self.work_id + "] " + str(e))
+    #         self._result = False
 
-    def is_good_file(self, url):
-        suffix = str(url).split('.')[-1]
-        try:
-            if suffix == 'csv':
-                d = pd.read_csv(url, encoding='utf-8')
-                d.columns = ['日期', '编码', '地区', '流量', '月份', '天', '小时']
-                sh = d.shape
-                if d.shape[1] == 7:
-                    self.length = d.shape[0]
-                    pd.to_datetime(pd.to_datetime(d['日期']), unit='ms')
-                    logger.info("[" + self.work_id + "]:shape" + str(sh) + "csv列数量正确")
-                    self._result = True
-                else:
-                    logger.error("[" + self.work_id + "]:shape" + str(sh) + "csv列数量错误")
-                    os.remove(url)
-                    self._result = False
-
-        except Exception as e:
-            logger.error("[" + self.work_id + "]:判断CSV异常:" + str(e))
-            os.remove(url)
-            self._result = False
+    # def is_good_file(self, url):
+    #     suffix = str(url).split('.')[-1]
+    #     try:
+    #         if suffix == 'csv':
+    #             d = pd.read_csv(url, encoding='utf-8')
+    #             d.columns = ['日期', '编码', '地区', '流量', '月份', '天', '小时']
+    #             sh = d.shape
+    #             if d.shape[1] == 7:
+    #                 self.length = d.shape[0]
+    #                 pd.to_datetime(pd.to_datetime(d['日期']), unit='ms')
+    #                 logger.info("[" + self.work_id + "]:shape" + str(sh) + "csv列数量正确")
+    #                 self._result = True
+    #             else:
+    #                 logger.error("[" + self.work_id + "]:shape" + str(sh) + "csv列数量错误")
+    #                 os.remove(url)
+    #                 self._result = False
+    #
+    #     except Exception as e:
+    #         logger.error("[" + self.work_id + "]:判断CSV异常:" + str(e))
+    #         os.remove(url)
+    #         self._result = False
 
 
 def isURL(url):

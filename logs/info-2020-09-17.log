@@ -1,0 +1,136 @@
+[2020-09-17 09:09:30,835] [view.py:84] [view:warn_realtion] [ERROR]- [e69f69dc45d309802771c456b0377557]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:10:52,249] [view.py:84] [view:warn_realtion] [ERROR]- [0687fae130e255477d2f618d536f98b8]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:10:53,517] [view.py:84] [view:warn_realtion] [ERROR]- [a4e256756e95b8e74ab156f25b0ea35e]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:12:01,112] [view.py:84] [view:warn_realtion] [ERROR]- [84dfd1c13769ffe14833cd8bb15a0926]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:12:03,232] [view.py:84] [view:warn_realtion] [ERROR]- [89945efe39d136f8007873974ac47fb1]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:17:11,625] [view.py:84] [view:warn_realtion] [ERROR]- [10ae146b4d2fee54db7ec898e0aec185]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:23:28,671] [view.py:86] [view:warn_realtion] [ERROR]- [900df6b18cf807f49a018c3bcc0b05f3]:name 'warn_data_url' is not defined
+[2020-09-17 09:27:48,155] [view.py:88] [view:warn_realtion] [ERROR]- [0a20e241e12c13381fb68ab1f7b1b5b5]:name 'warn_data_url' is not defined
+[2020-09-17 09:29:01,048] [view.py:88] [view:warn_realtion] [ERROR]- [b07fcbd3c961f49fab17f2b24b8010ea]:name 'warn_data_url' is not defined
+[2020-09-17 09:30:04,845] [view.py:88] [view:warn_realtion] [ERROR]- [689337f5ff5ac4c8350bd3ed36c7dd3b]:name 'warn_data_url' is not defined
+[2020-09-17 09:30:43,893] [view.py:88] [view:warn_realtion] [ERROR]- [877d78a316a203da384ba0dad29c2cd4]:'warn_data_url'
+[2020-09-17 09:32:15,841] [view.py:88] [view:warn_realtion] [ERROR]- [607270fa4e23e42d96c8dfa21966bf11]:'warn_data_url'
+[2020-09-17 09:37:04,984] [view.py:88] [view:warn_realtion] [ERROR]- [0c1d7c56d877fd156b290170680cbf2c]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:37:12,010] [view.py:88] [view:warn_realtion] [ERROR]- [3f6518410011df0e3977ffe89297ae13]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:37:26,910] [view.py:88] [view:warn_realtion] [ERROR]- [61e6cb691bdcc7ed7b7d56967aa50fcc]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:37:51,429] [view.py:88] [view:warn_realtion] [ERROR]- [4bb9464d0484c3dfebaf2f34afa089dd]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:38:13,937] [view.py:88] [view:warn_realtion] [ERROR]- [e0e568033f9fa6a32085f89e4f1cef28]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 09:39:11,429] [view.py:88] [view:warn_realtion] [ERROR]- [c7c6d24d76309f93c2d7775cd20ad0a2]:Extra data: line 1 column 6 (char 5)
+[2020-09-17 09:39:14,503] [view.py:88] [view:warn_realtion] [ERROR]- [d087de8be8fbc85a2f31226bf6400298]:Extra data: line 1 column 6 (char 5)
+[2020-09-17 09:41:46,232] [systen_unit.py:37] [systen_unit:download_file] [ERROR]- [51ca53c5b912549cb24c747db91af338] HTTPConnectionPool(host='10.196.135.137', port=8111): Max retries exceeded with url: /static/csv/warn_tail_30w.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8fb038cfd0>: Failed to establish a new connection: [Errno 51] Network is unreachable',))
+[2020-09-17 09:41:46,233] [view.py:70] [view:warn_realtion] [ERROR]- [51ca53c5b912549cb24c747db91af338]:没有告警文件下载url，或者告警文件url不合法，下载地址为http://10.196.135.137:8111/static/csv/warn_tail_30w.csv
+[2020-09-17 09:43:48,587] [systen_unit.py:58] [systen_unit:is_good_file] [ERROR]- [270558c89f979cf9a8a1a471f39813d6]:判断CSV异常:Length mismatch: Expected axis has 5 elements, new values have 7 elements
+[2020-09-17 09:43:48,597] [view.py:70] [view:warn_realtion] [ERROR]- [270558c89f979cf9a8a1a471f39813d6]:没有告警文件下载url，或者告警文件url不合法，下载地址为http://0.0.0.0:12002/static/upload/67c35597-7cc2-45ab-8fe5-64ba13f09fe0.csv
+[2020-09-17 09:43:57,588] [systen_unit.py:58] [systen_unit:is_good_file] [ERROR]- [75ea06b915c2753aaea1d83447095f65]:判断CSV异常:Length mismatch: Expected axis has 5 elements, new values have 7 elements
+[2020-09-17 09:43:57,598] [view.py:70] [view:warn_realtion] [ERROR]- [75ea06b915c2753aaea1d83447095f65]:没有告警文件下载url，或者告警文件url不合法，下载地址为http://0.0.0.0:12002/static/upload/67c35597-7cc2-45ab-8fe5-64ba13f09fe0.csv
+[2020-09-17 09:44:32,170] [systen_unit.py:58] [systen_unit:is_good_file] [ERROR]- [9078e96169e9d4ec2675aa416eda4b06]:判断CSV异常:Length mismatch: Expected axis has 5 elements, new values have 7 elements
+[2020-09-17 09:44:32,187] [view.py:63] [view:warn_realtion] [ERROR]- [9078e96169e9d4ec2675aa416eda4b06]:没有告警文件下载url，或者告警文件url不合法，下载地址为http://0.0.0.0:12002/static/upload/67c35597-7cc2-45ab-8fe5-64ba13f09fe0.csv
+[2020-09-17 09:45:12,516] [view.py:71] [view:warn_realtion] [ERROR]- [4a001f1638a6e0138f50ffe4729fbdb3]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:45:16,409] [view.py:71] [view:warn_realtion] [ERROR]- [ab12c5026367a5fdb20adc7a5dd617a2]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:45:26,487] [view.py:71] [view:warn_realtion] [ERROR]- [dc537478b73bd064933b6d442f69c2d1]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:00,407] [view.py:72] [view:warn_realtion] [ERROR]- [1d345e456da50591bda933e408517273]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:02,707] [view.py:72] [view:warn_realtion] [ERROR]- [37205347ca9495c43577d1cada1ca113]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:03,742] [view.py:72] [view:warn_realtion] [ERROR]- [7bd57da2bf02e9bed178620d77cf1353]:告警文件下载失败，或者告警文件不符合要求，下载地址为http://0.0.0.0:12002/uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:54,713] [view.py:72] [view:warn_realtion] [ERROR]- [5ca748723a4e21f73be66a80bc6e5294]:告警文件下载失败，或者告警文件不符合要求，下载地址为uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:56,765] [view.py:72] [view:warn_realtion] [ERROR]- [5869201e7683d37440f8708921556743]:告警文件下载失败，或者告警文件不符合要求，下载地址为uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 09:51:59,311] [view.py:72] [view:warn_realtion] [ERROR]- [fe6256d2903b3f50df88871c9fb9a6d4]:告警文件下载失败，或者告警文件不符合要求，下载地址为uploads/lteFlowOfCity5Min_anshun_guanling.csv
+[2020-09-17 10:15:51,619] [view.py:72] [view:get_predict_flow] [ERROR]- [22e5b87194d694ac74692f9f7e672d99]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:17:04,099] [view.py:72] [view:get_predict_flow] [ERROR]- [a34294fb7540aecc17eac806ea49f558]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:17:22,937] [view.py:72] [view:get_predict_flow] [ERROR]- [a0a8217430112c4442a4350c9abe1e26]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:17:23,456] [view.py:72] [view:get_predict_flow] [ERROR]- [6b30438ac5cd6dd7f9ae2dbefb8a1aea]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:17:23,815] [view.py:72] [view:get_predict_flow] [ERROR]- [1b1b478205c853efe84145bafffba1e9]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:19:44,544] [view.py:73] [view:get_predict_flow] [ERROR]- [1b31f0acde7efa36ebe6ff1d5624a406]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:19:45,880] [view.py:73] [view:get_predict_flow] [ERROR]- [fea1e5dcdaa7e4a9b6c78be95b482fcb]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 10:20:27,826] [view.py:74] [view:get_predict_flow] [ERROR]- [2b92e9268473322400a4f4289c3cc4c8]:告警文件下载失败，或者告警文件不符合要求，下载地址为line_lteFlowOfCity5Min_anshun_pingba
+[2020-09-17 11:35:39,330] [view.py:71] [view:get_predict_flow] [ERROR]- [e54a3a1c56ba6418991a8d40e6d96d8e]:告警文件下载失败，或者告警文件不符合要求，下载地址为static/upload/0b7ed601-12bf-4c39-9928-8aad01774245.csv
+[2020-09-17 11:37:23,647] [view.py:63] [view:get_predict_flow] [ERROR]- [99623ec1f1e8b946c037f7867bef89d8]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/99623ec1f1e8b946c037f7867bef89d8.csv
+[2020-09-17 11:37:25,931] [view.py:63] [view:get_predict_flow] [ERROR]- [5ab818366540edf827b7ac52d4143dfe]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/5ab818366540edf827b7ac52d4143dfe.csv
+[2020-09-17 11:38:07,563] [view.py:63] [view:get_predict_flow] [ERROR]- [5ac4421bc441cfb1b4a16fe57ddbca96]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/5ac4421bc441cfb1b4a16fe57ddbca96.csv
+[2020-09-17 11:39:42,522] [view.py:63] [view:get_predict_flow] [ERROR]- [41cf81cd8dee7feb6e495ac3d76150a4]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/41cf81cd8dee7feb6e495ac3d76150a4.csv
+[2020-09-17 11:39:46,844] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/24c0bd54d104ab9b4d598dd2cc7f21bd.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/24c0bd54d104ab9b4d598dd2cc7f21bd.csv
+[2020-09-17 11:39:49,999] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/5b90de1da17f5e4a598bcdae58e46960.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/5b90de1da17f5e4a598bcdae58e46960.csv
+[2020-09-17 11:40:04,676] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/636f1f5f6bbebf37652f8ad15855ece0.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/636f1f5f6bbebf37652f8ad15855ece0.csv
+[2020-09-17 11:40:08,773] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/b7de015a058a6f427a1d9bcab5c83653.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/b7de015a058a6f427a1d9bcab5c83653.csv
+[2020-09-17 11:40:09,987] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/44797e77caa13011c8374f1264f2f0f3.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/44797e77caa13011c8374f1264f2f0f3.csv
+[2020-09-17 11:40:15,573] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/f48d59b99024f0989b67fedb81035266.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/f48d59b99024f0989b67fedb81035266.csv
+[2020-09-17 11:40:16,800] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/8fd0cd485ff247bb2cd5ac8aa8c5bab4.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/8fd0cd485ff247bb2cd5ac8aa8c5bab4.csv
+[2020-09-17 11:40:21,314] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/90cf4b1b5989c24af3c1a126d9857116.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/90cf4b1b5989c24af3c1a126d9857116.csv
+[2020-09-17 11:40:23,829] [view.py:64] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/31ace9e803817b9d823c6baf5e48d254.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/31ace9e803817b9d823c6baf5e48d254.csv
+[2020-09-17 11:41:11,445] [view.py:82] [view:get_predict_flow] [ERROR]- [42de23612a7dd0126b43a65ea725b36a]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:44:58,536] [view.py:84] [view:get_predict_flow] [ERROR]- [bf5e514c96670e3f9b50b6420aa1fdc3]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:45:09,011] [view.py:84] [view:get_predict_flow] [ERROR]- [822f4201b232afc373ec60ce600c4f8a]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:45:10,625] [view.py:84] [view:get_predict_flow] [ERROR]- [bfc302296d8c2022d6731ca0913c6c9b]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:45:22,049] [view.py:84] [view:get_predict_flow] [ERROR]- [7d567e1c030a71521d059d7ec6e62aeb]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:46:38,078] [view.py:84] [view:get_predict_flow] [ERROR]- [9ab80acf6ce9d2070bedda201136b1c4]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:46:40,313] [view.py:84] [view:get_predict_flow] [ERROR]- [1218a417e0c0883585f08f722546432c]:Expecting value: line 1 column 1 (char 0)
+[2020-09-17 11:48:34,889] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/a7c3d17b886aaf166aa6d8e500f229fb.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/a7c3d17b886aaf166aa6d8e500f229fb.csv
+[2020-09-17 11:48:35,947] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/39024279c9b02c0901bf735f8c189028.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/39024279c9b02c0901bf735f8c189028.csv
+[2020-09-17 11:48:37,381] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/ae392e67758c13e95a72a20fa38afc1f.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/ae392e67758c13e95a72a20fa38afc1f.csv
+[2020-09-17 11:48:38,844] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/1de9fe6a8a466c63f2c357db61502bac.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/1de9fe6a8a466c63f2c357db61502bac.csv
+[2020-09-17 11:49:00,963] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/4188638ed90e7d9292a7aa28dd478fe2.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/4188638ed90e7d9292a7aa28dd478fe2.csv
+[2020-09-17 11:49:06,422] [view.py:67] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/da5f098e17d6f7d78ef5bd8648e31f7d.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/da5f098e17d6f7d78ef5bd8648e31f7d.csv
+[2020-09-17 11:49:08,037] [view.py:67] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/2b997792c207d840b7efb8d18e3c85fd.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/2b997792c207d840b7efb8d18e3c85fd.csv
+[2020-09-17 11:50:24,902] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/8b8fa31f1a40061429a87abc2f3f0375.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/8b8fa31f1a40061429a87abc2f3f0375.csv
+[2020-09-17 11:50:27,044] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/6ad5c79c867f6139bfdc6fb5373e09f8.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/6ad5c79c867f6139bfdc6fb5373e09f8.csv
+[2020-09-17 11:50:41,052] [view.py:68] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/c6978c99abdcf0cd6ffd2f449b7647f1.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/c6978c99abdcf0cd6ffd2f449b7647f1.csv
+[2020-09-17 11:50:44,505] [view.py:53] [view:get_predict_flow] [INFO]- [7fdc28c6a1bdf591ae2f5e20b657f2c6]:请求成功，任务开始启动
+[2020-09-17 11:50:44,507] [view.py:86] [view:get_predict_flow] [ERROR]- [7fdc28c6a1bdf591ae2f5e20b657f2c6]:unsupported operand type(s) for /: 'NoneType' and 'int'
+[2020-09-17 11:50:48,105] [view.py:53] [view:get_predict_flow] [INFO]- [64f3a6b4f23bf0a89138639abaf37b89]:请求成功，任务开始启动
+[2020-09-17 11:50:48,106] [view.py:86] [view:get_predict_flow] [ERROR]- [64f3a6b4f23bf0a89138639abaf37b89]:unsupported operand type(s) for /: 'NoneType' and 'int'
+[2020-09-17 11:50:49,531] [view.py:53] [view:get_predict_flow] [INFO]- [a9e18e8d09355c9368161cf8e5a3e0de]:请求成功，任务开始启动
+[2020-09-17 11:50:49,532] [view.py:86] [view:get_predict_flow] [ERROR]- [a9e18e8d09355c9368161cf8e5a3e0de]:unsupported operand type(s) for /: 'NoneType' and 'int'
+[2020-09-17 11:52:59,034] [view.py:54] [view:get_predict_flow] [INFO]- [9273a82f3207eb08b756b6c8116826ba]:请求成功，任务开始启动
+[2020-09-17 11:52:59,035] [view.py:69] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/9273a82f3207eb08b756b6c8116826ba.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/9273a82f3207eb08b756b6c8116826ba.csv
+[2020-09-17 11:53:23,166] [view.py:54] [view:get_predict_flow] [INFO]- [51b54eb37efab482851ca739f82abf08]:请求成功，任务开始启动
+[2020-09-17 11:53:23,167] [view.py:69] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/51b54eb37efab482851ca739f82abf08.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/51b54eb37efab482851ca739f82abf08.csv
+[2020-09-17 11:53:30,415] [view.py:53] [view:get_predict_flow] [INFO]- [f348544f181a602e2f071d9e8395492f]:请求成功，任务开始启动
+[2020-09-17 11:53:30,415] [view.py:69] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/f348544f181a602e2f071d9e8395492f.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/f348544f181a602e2f071d9e8395492f.csv
+[2020-09-17 11:53:33,194] [view.py:53] [view:get_predict_flow] [INFO]- [b07b18a416caf898bc6a1ff6f55fa3b2]:请求成功，任务开始启动
+[2020-09-17 11:53:33,194] [view.py:69] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/b07b18a416caf898bc6a1ff6f55fa3b2.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/b07b18a416caf898bc6a1ff6f55fa3b2.csv
+[2020-09-17 11:53:46,726] [view.py:53] [view:get_predict_flow] [INFO]- [067d92989566b8df3a09a67ea95f2989]:请求成功，任务开始启动
+[2020-09-17 11:53:46,727] [view.py:69] [view:get_predict_flow] [ERROR]- [/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/067d92989566b8df3a09a67ea95f2989.csv]:没有告警文件下载url，或者告警文件url不合法，下载地址为/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/static/download/067d92989566b8df3a09a67ea95f2989.csv
+[2020-09-17 11:53:49,680] [view.py:53] [view:get_predict_flow] [INFO]- [8f99dd058e734673f11f5cce69dc270d]:请求成功，任务开始启动
+[2020-09-17 11:59:26,478] [view.py:38] [view:get_predict_flow] [INFO]- [b0fb99676955a65221b2a2eca24116aa]:请求成功，任务开始启动
+[2020-09-17 12:02:44,779] [view.py:38] [view:get_predict_flow] [INFO]- [50407a63fdb6507a01d0c8b2ce56ed8e]:请求成功，任务开始启动
+[2020-09-17 12:02:50,581] [view.py:38] [view:get_predict_flow] [INFO]- [a1b7109708cd1303cccbcb588c5de1ad]:请求成功，任务开始启动
+[2020-09-17 12:03:14,521] [view.py:38] [view:get_predict_flow] [INFO]- [08c300f8f1c0682aa9c0a1ebdef6d78d]:请求成功，任务开始启动
+[2020-09-17 12:03:17,916] [view.py:38] [view:get_predict_flow] [INFO]- [b70dac121f0eff0376cc30e5e7e432e2]:请求成功，任务开始启动
+[2020-09-17 12:03:19,736] [view.py:38] [view:get_predict_flow] [INFO]- [1dbf3ee0e6de67834f5130b5d957735e]:请求成功，任务开始启动
+[2020-09-17 12:04:09,569] [view.py:38] [view:get_predict_flow] [INFO]- [7fd84b953d95d10614748b96f494a84c]:请求成功，任务开始启动
+[2020-09-17 12:04:10,005] [view.py:38] [view:get_predict_flow] [INFO]- [e89b03f2c72df21128da20c537416b77]:请求成功，任务开始启动
+[2020-09-17 12:04:56,232] [view.py:38] [view:get_predict_flow] [INFO]- [4638c3fa3e9c8ad47313f2122412cff2]:请求成功，任务开始启动
+[2020-09-17 12:05:00,479] [view.py:38] [view:get_predict_flow] [INFO]- [9a7899ca84c2feb187b87572ab6f7858]:请求成功，任务开始启动
+[2020-09-17 12:05:01,967] [view.py:38] [view:get_predict_flow] [INFO]- [c8cd9c1a8a22f35f78bad3a1cec3bf4a]:请求成功，任务开始启动
+[2020-09-17 12:05:02,752] [view.py:38] [view:get_predict_flow] [INFO]- [c6367a8a77ac9ddfd793e6e34f1c0a84]:请求成功，任务开始启动
+[2020-09-17 12:05:03,211] [view.py:38] [view:get_predict_flow] [INFO]- [e019163251c0ece7383182f12a37dd63]:请求成功，任务开始启动
+[2020-09-17 12:44:50,804] [view.py:42] [view:get_predict_flow] [INFO]- [c03e76eca8b0456078d0faed35cd4231]:请求成功，任务开始启动
+[2020-09-17 12:46:22,515] [view.py:42] [view:get_predict_flow] [INFO]- [69285e9fd70bcded79fbd6db4fc44982]:请求成功，任务开始启动
+[2020-09-17 12:47:39,180] [view.py:42] [view:get_predict_flow] [INFO]- [c64b87bfaf0990bfed4a0a42f0745fd1]:请求成功，任务开始启动
+[2020-09-17 12:47:44,062] [view.py:42] [view:get_predict_flow] [INFO]- [ccf879ecaebd4e1e205061ae77b6ad57]:请求成功，任务开始启动
+[2020-09-17 12:47:45,604] [view.py:42] [view:get_predict_flow] [INFO]- [a89dfe08c0c4397c0e734a6ef771f871]:请求成功，任务开始启动
+[2020-09-17 12:49:07,345] [view.py:45] [view:get_predict_flow] [INFO]- [69a57f322a66b31bae05a26e4a1976e6]:请求成功，任务开始启动
+[2020-09-17 12:49:15,526] [view.py:45] [view:get_predict_flow] [INFO]- [d1cb2497369e574de091d7b647234c61]:请求成功，任务开始启动
+[2020-09-17 12:49:17,535] [view.py:45] [view:get_predict_flow] [INFO]- [d59b5066235d1e596a67d3e9a3ff7324]:请求成功，任务开始启动
+[2020-09-17 12:49:19,041] [view.py:45] [view:get_predict_flow] [INFO]- [67f36c9965bd00f6208b4a779e78079e]:请求成功，任务开始启动
+[2020-09-17 12:49:20,162] [view.py:45] [view:get_predict_flow] [INFO]- [38689d7ec70ac444ebf3d478d7a5f4e4]:请求成功，任务开始启动
+[2020-09-17 12:49:21,012] [view.py:45] [view:get_predict_flow] [INFO]- [bbca1d406f143a89d8f82c5d08dd0135]:请求成功，任务开始启动
+[2020-09-17 12:51:34,523] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:52:02,927] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:52:03,905] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:52:04,585] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:55:18,784] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:56:34,966] [view.py:46] [view:get_predict_flow] [INFO]- [0b8c9dcd-7227-42f6-bb68-d6963f7e75f1]:请求成功，任务开始启动
+[2020-09-17 12:56:39,947] [view.py:46] [view:get_predict_flow] [INFO]- [a7d2de1d-958d-416c-8e71-57f8cb1ef639]:请求成功，任务开始启动
+[2020-09-17 12:56:45,383] [view.py:46] [view:get_predict_flow] [INFO]- [a7d2de1d-958d-416c-8e71-57f8cb1ef639]:请求成功，任务开始启动
+[2020-09-17 12:57:17,270] [view.py:46] [view:get_predict_flow] [INFO]- [970673f1-7905-48f8-a22a-c668fc1570b6]:请求成功，任务开始启动
+[2020-09-17 12:57:20,069] [view.py:46] [view:get_predict_flow] [INFO]- [970673f1-7905-48f8-a22a-c668fc1570b6]:请求成功，任务开始启动
+[2020-09-17 12:58:08,447] [view.py:46] [view:get_predict_flow] [INFO]- [970673f1-7905-48f8-a22a-c668fc1570b6]:请求成功，任务开始启动
+[2020-09-17 12:59:32,816] [view.py:46] [view:get_predict_flow] [INFO]- [1454b8f7-70ce-4e80-a8d4-244e1392118f]:请求成功，任务开始启动
+[2020-09-17 13:00:45,836] [view.py:46] [view:get_predict_flow] [INFO]- [c1efc914-cf65-4e0a-92cd-0ac3b0785cb3]:请求成功，任务开始启动
+[2020-09-17 13:02:36,627] [view.py:43] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:02:48,437] [view.py:43] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:03:33,960] [view.py:43] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:04:04,232] [view.py:43] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:07:46,013] [view.py:46] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:07:48,743] [view.py:46] [view:get_predict_flow] [INFO]- [5194853c-ad8f-4c46-972d-34dbcb2bb0ce]:请求成功，任务开始启动
+[2020-09-17 13:08:49,667] [view.py:46] [view:get_predict_flow] [INFO]- [18c4a155-cd92-4b95-a98d-7a20fc39d96a]:请求成功，任务开始启动
