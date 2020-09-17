@@ -20,4 +20,4 @@ RUN	apt-get -y update &&\
 	git clone  https://github.com/fengzezhong/flowpredict.git
 
 WORKDIR /src
-CMD ["python","/src/flowpredict_web/manage.py","runserver","0.0.0.0:12002"]
+CMD ["python","/src/flowpredict_web/manage.py","runserver","0.0.0.0:12012"]
