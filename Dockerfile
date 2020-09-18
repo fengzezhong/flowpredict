@@ -12,9 +12,19 @@ RUN	pip install keras -i https://mirrors.aliyun.com/pypi/simple/&&\
 	pip install sklearn -i https://mirrors.aliyun.com/pypi/simple/&&\
 	pip install tqdm -i https://mirrors.aliyun.com/pypi/simple/
 
-RUN	apt-get -y update &&\
-	apt-get install -y git &&\
-	mkdir /config &&\
+RUN echo 'deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib \
+    deb-src http://mirrors.aliyun.com/debian/ stretch main non-free contrib \
+    deb http://mirrors.aliyun.com/debian-security stretch/updates main \
+    deb-src http://mirrors.aliyun.com/debian-security stretch/updates main \
+    deb http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib \
+    deb-src http://mirrors.aliyun.com/debian/ stretch-updates main non-free contrib \
+    deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib \
+    deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib' > /etc/apt/sources.list
+
+    apt-get -y update &&\
+	apt-get install -y git
+
+RUN	mkdir /config &&\
 	mkdir /src &&\
 	cd /src &&\
 	git clone  https://github.com/fengzezhong/flowpredict.git

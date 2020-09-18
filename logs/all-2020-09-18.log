@@ -25,3 +25,42 @@
 [2020-09-18 13:00:48,446] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
 [2020-09-18 13:00:57,819] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 3161
 [2020-09-18 13:01:00,299] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:20:15,665] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 15:21:52,571] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 15:22:36,869] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:22:45,409] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:22:46,573] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:22:47,452] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:22:49,195] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:23:08,058] [view.py:39] [view:get_predict_flow] [INFO]- [08ff0b1d-8959-4fd8-be8c-8828c8e7cca8]:请求成功，任务开始启动
+[2020-09-18 15:23:08,059] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:23:13,301] [view.py:39] [view:get_predict_flow] [INFO]- [08ff0b1d-8959-4fd8-be8c-8828c8e7cca8]:请求成功，任务开始启动
+[2020-09-18 15:23:13,306] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:23:15,630] [view.py:39] [view:get_predict_flow] [INFO]- [08ff0b1d-8959-4fd8-be8c-8828c8e7cca8]:请求成功，任务开始启动
+[2020-09-18 15:23:15,631] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:23:25,810] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1053
+[2020-09-18 15:23:26,953] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1053
+[2020-09-18 15:23:27,815] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1053
+[2020-09-18 15:23:28,806] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1053
+[2020-09-18 15:23:37,064] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:23:37,958] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:23:38,652] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:24:00,958] [log.py:230] [log:log_response] [WARNING]- Not Found: /static/download/08ff0b1d-8959-4fd8-be8c-8828c8e7cca8.csv"}}
+[2020-09-18 15:24:00,958] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /static/download/08ff0b1d-8959-4fd8-be8c-8828c8e7cca8.csv%22%7D%7D HTTP/1.1" 404 179
+[2020-09-18 15:24:09,981] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/08ff0b1d-8959-4fd8-be8c-8828c8e7cca8.csv HTTP/1.1" 200 1053
+[2020-09-18 15:26:11,214] [view.py:39] [view:get_predict_flow] [INFO]- [08ff0b1d-8959-4fd8-be8c-8828c8e7cca8]:请求成功，任务开始启动
+[2020-09-18 15:26:11,214] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:28:44,080] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 15:28:52,938] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:28:54,233] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 15:29:17,102] [view.py:39] [view:get_predict_flow] [INFO]- [2385c930-235c-484e-9b0f-91cdb733c9de]:请求成功，任务开始启动
+[2020-09-18 15:29:17,120] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:29:20,778] [view.py:39] [view:get_predict_flow] [INFO]- [2385c930-235c-484e-9b0f-91cdb733c9de]:请求成功，任务开始启动
+[2020-09-18 15:29:20,779] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:29:22,268] [view.py:39] [view:get_predict_flow] [INFO]- [2385c930-235c-484e-9b0f-91cdb733c9de]:请求成功，任务开始启动
+[2020-09-18 15:29:22,269] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-18 15:29:30,639] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1084
+[2020-09-18 15:29:31,847] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1084
+[2020-09-18 15:29:36,697] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:29:37,688] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 15:30:01,004] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/2385c930-235c-484e-9b0f-91cdb733c9de.csv HTTP/1.1" 200 1084

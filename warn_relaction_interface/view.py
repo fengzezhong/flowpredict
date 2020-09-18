@@ -10,11 +10,6 @@ logger = logging.getLogger('log')
 
 from uuid import uuid4
 
-work_id = str(uuid4())
-file_name = work_id + ".csv"
-
-print(file_name)
-
 
 def start(req):
     return HttpResponse(json.dumps({
@@ -51,7 +46,7 @@ def get_predict_flow(req):
                         # "pre_time": str(
                         #     down_un.get_len() / 4000 + down_un.get_len() / 300000 + down_un.get_len() / 25000),
                         "work_id": work_id,
-                        "download_url": upload_url.split("upload")[0] + "download/" + work_id + ".csv",
+                        "download_url": "static/download/" + work_id + ".csv",
 
                     }
                 }))
@@ -199,7 +194,8 @@ def handle_uploaded_file(f, file_name):
 
 def FileUp(request):
     if request.method == 'POST':
-
+        work_id = str(uuid4())
+        file_name = work_id + ".csv"
         myFile = request.FILES.get("flow_file", None)
 
         if myFile:
