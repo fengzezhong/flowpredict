@@ -1,0 +1,4 @@
+[2020-09-18 11:00:08,185] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 11:00:10,998] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 13:00:36,631] [view.py:44] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 13:00:48,438] [view.py:44] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动

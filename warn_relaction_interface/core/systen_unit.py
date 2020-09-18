@@ -1,8 +1,8 @@
-import requests
 import re
 import uuid, hashlib
-import pandas as pd
-import os
+# import requests
+# import pandas as pd
+# import os
 import logging
 
 logger = logging.getLogger('log')
@@ -76,8 +76,6 @@ def isURL(url):
         return True
     else:
         return False
-
-
 
 
 def get_unique_str():

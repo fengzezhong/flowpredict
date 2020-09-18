@@ -1,6 +1,5 @@
-from warn_relaction_interface import view
+from . import view
 from django.conf.urls import url
-from django.views import static
 from django.conf import settings
 from django.views.static import serve
 

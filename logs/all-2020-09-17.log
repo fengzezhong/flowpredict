@@ -731,3 +731,20 @@ NameError: name 'req' is not defined
 [2020-09-17 13:20:04,722] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 728
 [2020-09-17 13:22:06,330] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
 [2020-09-17 13:22:08,948] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-17 14:31:55,049] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-17 14:31:55,629] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2020-09-17 14:31:55,629] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 179
+[2020-09-17 14:32:17,563] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-17 14:32:48,742] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-17 14:32:48,743] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-17 14:32:53,155] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1076
+[2020-09-17 14:32:56,514] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-17 14:35:04,835] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-17 14:35:08,414] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-17 14:35:08,416] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-17 14:35:10,210] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-17 14:35:10,210] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-17 14:35:13,156] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1763
+[2020-09-17 14:35:14,563] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1763
+[2020-09-17 14:35:16,606] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-17 14:35:17,597] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81

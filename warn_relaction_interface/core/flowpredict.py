@@ -3,7 +3,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split  # 这里是引用了交叉验证
 from sklearn.linear_model import LinearRegression  # 线性回归
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import os
 
 root = ''

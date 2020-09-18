@@ -1,10 +1,8 @@
 from django.http import HttpResponse
 from . import settings
 from .core.warn_realation import file_handle_and_predict
-from .core import systen_unit as su
 import threading
 import os
-import re
 import json
 import logging
 

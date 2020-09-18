@@ -1,7 +1,6 @@
 import pandas as pd
 from .. import settings
 import os
-from apyori import apriori
 import logging
 import numpy as np
 from sklearn.model_selection import train_test_split  # 这里是引用了交叉验证
@@ -267,9 +266,9 @@ def fiest_apply(self, row):
         return None
 
 
-def do_apriori(self):
-    for i in self.all_gr_data:
-        if len(i) >= 2:
-            self.apro.append(list(map(lambda x: str(x), i)))
-    results = list(apriori(self.apro, min_confidence=0.001, min_support=0.001, min_lift=1))
-    return results
+# def do_apriori(self):
+#     for i in self.all_gr_data:
+#         if len(i) >= 2:
+#             self.apro.append(list(map(lambda x: str(x), i)))
+#     results = list(apriori(self.apro, min_confidence=0.001, min_support=0.001, min_lift=1))
+#     return results

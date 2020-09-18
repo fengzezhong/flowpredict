@@ -1,0 +1,27 @@
+[2020-09-18 10:59:06,548] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 10:59:17,496] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-18 10:59:18,132] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2020-09-18 10:59:18,133] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 179
+[2020-09-18 10:59:45,748] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 10:59:55,603] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 11:00:00,473] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 11:00:03,704] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 11:00:08,185] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 11:00:08,223] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-18 11:00:10,998] [view.py:46] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 11:00:11,006] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-18 11:00:14,923] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 2464
+[2020-09-18 11:00:17,911] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-18 12:53:10,464] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/warn_relaction_interface/view.py changed, reloading.
+[2020-09-18 12:53:11,634] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 12:54:54,542] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/warn_relaction_interface/urls.py changed, reloading.
+[2020-09-18 12:54:55,386] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 13:00:20,223] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-18 13:00:28,128] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 13:00:31,503] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-18 13:00:36,631] [view.py:44] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 13:00:36,632] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-18 13:00:48,438] [view.py:44] [view:get_predict_flow] [INFO]- [ba5ba4e6-4264-43a9-b9bf-e390c59899fb]:请求成功，任务开始启动
+[2020-09-18 13:00:48,446] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 251
+[2020-09-18 13:00:57,819] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 3161
+[2020-09-18 13:01:00,299] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
