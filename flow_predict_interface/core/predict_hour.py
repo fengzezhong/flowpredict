@@ -10,21 +10,14 @@ import datetime
 
 from .. import settings
 import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib as mpl
 import numpy as np
-import math
 
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
-import sklearn.metrics as metrics
 
 from keras.models import Sequential, load_model
 from keras.layers import Dense, LSTM, Dropout
-from keras.utils.vis_utils import plot_model
 
 from keras import backend as K
-import tensorflow as tf
 
 
 def pre_predict_data(train_data, scaler):
