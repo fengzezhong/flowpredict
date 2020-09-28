@@ -1,0 +1,24 @@
+[2020-09-27 13:58:09,841] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 13:58:21,468] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 13:59:33,592] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:00:24,311] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:04,618] [view.py:81] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:15,962] [view.py:81] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:22,838] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:25,196] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:26,146] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:04:48,241] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:04:50,385] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:05:13,852] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:decoding str is not supported
+[2020-09-27 14:05:43,215] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:decoding str is not supported
+[2020-09-27 14:05:51,145] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:07:24,010] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:09:10,439] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:11:12,068] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:header must be integer or list of integers
+[2020-09-27 14:16:39,560] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:name 'model_path' is not defined
+[2020-09-27 14:27:14,955] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:name 'model' is not defined
+[2020-09-27 14:33:12,193] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:local variable 'pare_hour_datas' referenced before assignment
+[2020-09-27 15:10:37,237] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:17:08,420] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:18:59,301] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:19:42,102] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array

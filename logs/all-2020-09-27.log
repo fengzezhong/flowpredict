@@ -1,0 +1,271 @@
+[2020-09-27 09:53:55,721] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 09:54:05,420] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-09-27 09:54:06,010] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2020-09-27 09:54:06,011] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 179
+[2020-09-27 09:54:15,347] [log.py:230] [log:log_response] [WARNING]- Not Found: /checkpoint.do
+[2020-09-27 09:54:15,347] [basehttp.py:157] [basehttp:log_message] [WARNING]- "GET /checkpoint.do HTTP/1.1" 404 179
+[2020-09-27 09:54:25,476] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /healthcheck.do HTTP/1.1" 200 67
+[2020-09-27 09:55:23,279] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 09:55:44,295] [view.py:39] [view:get_predict_flow] [INFO]- [bf914b6b-4206-4de1-97fb-728fc9a2aa55]:请求成功，任务开始启动
+[2020-09-27 09:55:44,297] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 09:55:59,823] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 348
+[2020-09-27 09:56:09,932] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-09-27 09:56:26,040] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/bf914b6b-4206-4de1-97fb-728fc9a2aa55.csv HTTP/1.1" 200 348
+[2020-09-27 10:38:41,266] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 11:03:17,054] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 11:03:47,821] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 11:05:47,077] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 11:05:48,587] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 11:10:10,127] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 11:10:10,892] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 11:14:08,396] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_day.py changed, reloading.
+[2020-09-27 11:14:09,963] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 11:14:17,354] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_day.py changed, reloading.
+[2020-09-27 11:14:18,518] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 11:17:49,782] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 11:17:50,693] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 11:18:54,887] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 11:18:55,880] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 13:48:32,508] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 13:52:02,260] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 13:52:03,445] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 13:55:17,209] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 13:55:17,999] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 13:56:41,311] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 13:56:42,465] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 13:56:57,072] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 13:57:52,856] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /get_flow
+Traceback (most recent call last):
+  File "/Applications/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Applications/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py", line 28, in get_predict_flow
+    req_data = json.loads(req.body)
+  File "/Applications/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Applications/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Applications/anaconda3/lib/python3.6/json/decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 1 column 59 (char 58)
+[2020-09-27 13:57:52,861] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /get_flow HTTP/1.1" 500 145
+[2020-09-27 13:58:09,841] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 13:58:09,842] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 13:58:21,468] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 13:58:21,470] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 13:59:33,592] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 13:59:33,593] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:00:12,093] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:00:24,311] [view.py:80] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:00:24,316] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:02:57,340] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 14:02:58,293] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:03:04,618] [view.py:81] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:04,631] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:03:15,962] [view.py:81] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:15,963] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:03:16,020] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-09-27 14:03:16,790] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:03:22,838] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:22,840] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:03:25,196] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:25,197] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:03:26,146] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:03:26,159] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:04:01,695] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:04:02,425] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:04:40,518] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:04:41,280] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:04:48,241] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:04:48,243] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:04:50,385] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:04:50,386] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:05:04,935] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:05:05,766] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:05:13,852] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:decoding str is not supported
+[2020-09-27 14:05:13,853] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:05:43,215] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:decoding str is not supported
+[2020-09-27 14:05:43,216] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:05:43,564] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:05:44,287] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:05:51,145] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:05:51,147] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:07:09,844] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:07:11,232] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:07:24,010] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:07:24,013] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:08:44,556] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:08:45,668] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:09:00,140] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:09:01,205] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:09:10,439] [view.py:82] [view:get_predict_flow] [ERROR]- [742a7d5d-e50f-40a5-914a-7b54961a6574]:'city'
+[2020-09-27 14:09:10,442] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:10:14,859] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:10:16,302] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:10:59,331] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 14:11:12,068] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:header must be integer or list of integers
+[2020-09-27 14:11:12,068] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:11:55,301] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:11:56,371] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:12:05,164] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:12:05,167] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:14:21,455] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:14:21,456] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:14:21,484] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:14:22,670] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:16:39,560] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:name 'model_path' is not defined
+[2020-09-27 14:16:39,563] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:17:02,168] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:17:03,664] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:18:20,245] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:18:21,434] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:26:09,684] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:26:10,845] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:26:40,253] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:26:42,123] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:27:14,955] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:name 'model' is not defined
+[2020-09-27 14:27:14,957] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:29:00,756] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:29:02,393] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:32:41,671] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:32:42,769] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:33:12,193] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:local variable 'pare_hour_datas' referenced before assignment
+[2020-09-27 14:33:12,196] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 14:34:20,701] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:34:21,817] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:35:31,943] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:35:33,095] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:35:53,531] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:35:54,625] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:37:00,871] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:37:00,879] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:40:11,266] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:40:12,865] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:41:14,981] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:41:14,982] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:43:03,066] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:44:26,094] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:44:26,889] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:45:45,049] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:45:45,050] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:47:35,990] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:47:37,708] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:48:10,939] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:48:12,571] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:49:50,312] [view.py:57] [view:get_predict_flow] [INFO]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:请求成功，任务开始启动
+[2020-09-27 14:49:50,320] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 14:54:39,236] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 14:58:24,784] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 14:58:25,861] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:03:17,640] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:03:18,538] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:08:49,245] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:08:49,855] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:09:26,121] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:09:26,639] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:10:37,237] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:10:37,239] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 15:15:18,680] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:15:20,421] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:16:37,678] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:16:39,005] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:17:08,420] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:17:08,423] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 15:18:24,279] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:18:59,301] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:18:59,303] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 15:19:04,747] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:19:07,584] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:19:42,102] [view.py:82] [view:get_predict_flow] [ERROR]- [adb036ad-027b-42e2-87ee-62bfe0abe342]:too many indices for array
+[2020-09-27 15:19:42,108] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-09-27 15:20:14,624] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 15:25:38,045] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-27 15:26:42,490] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:26:42,496] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:27:21,736] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:27:23,390] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:27:34,228] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:27:34,235] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:31:15,694] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:31:17,170] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:32:42,986] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:32:42,993] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:32:43,185] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:32:44,353] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:33:30,966] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:33:30,969] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:34:15,570] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:34:17,073] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:34:47,440] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:34:48,556] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:34:50,487] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:35:42,461] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:35:42,468] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:36:10,586] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:36:11,756] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:36:45,930] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:36:45,938] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:37:12,170] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:37:14,066] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:37:42,787] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:37:42,796] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:38:33,224] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:38:35,083] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:38:46,425] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:38:47,655] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:39:19,820] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:39:19,827] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:40:42,638] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:40:44,201] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:41:13,198] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 15:41:13,200] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 15:45:41,934] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:45:43,548] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:47:04,419] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:47:05,400] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 15:48:05,660] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 15:48:07,389] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:11:13,248] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:12:03,690] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:12:03,695] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:14:51,858] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:14:53,195] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:15:23,687] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:15:23,689] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:17:05,681] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:17:07,009] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:17:39,941] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:17:39,942] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:23:13,213] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:23:14,951] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:26:10,108] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:26:11,024] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:26:54,956] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:26:54,957] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:28:56,069] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:28:57,815] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:29:30,204] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:29:30,205] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:29:52,959] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:29:54,452] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:30:26,888] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:30:26,889] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:32:09,892] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:32:11,401] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:32:44,117] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:32:45,128] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:33:17,869] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:33:17,871] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:48:28,521] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:48:30,419] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 16:49:05,487] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 16:49:05,489] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 16:49:44,865] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 16:49:46,506] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 17:19:00,920] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 17:19:00,925] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-27 17:21:58,450] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-09-27 17:22:00,360] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-27 17:22:30,969] [view.py:57] [view:get_predict_flow] [INFO]- [21dcb051-80ef-4bdb-ba20-424e9c5e1b61]:请求成功，任务开始启动
+[2020-09-27 17:22:30,971] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
