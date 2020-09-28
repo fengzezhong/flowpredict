@@ -1,6 +1,5 @@
 from django.http import HttpResponse
 from . import settings
-from .core.flow_predict_bak import file_handle_and_predict
 from .core.predict_hour import file_handle_and_predict_hour
 from .core.predict_day import file_handle_and_predict_day
 from .core.predict_min import file_handle_and_predict_min
