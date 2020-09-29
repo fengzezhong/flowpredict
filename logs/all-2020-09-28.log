@@ -177,3 +177,13 @@
 [2020-09-28 11:21:48,652] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1091
 [2020-09-28 11:21:56,685] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
 [2020-09-28 11:22:01,752] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/a042a999-0df2-4dc0-a0bd-3c8a94216f14.csv HTTP/1.1" 200 1091
+[2020-09-28 16:45:06,804] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-09-28 16:46:29,299] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-28 16:47:19,552] [view.py:54] [view:get_predict_flow] [INFO]- [9a4dc045-f58f-4c02-95b1-e63c7e376d93]:请求成功，任务开始启动
+[2020-09-28 16:47:19,554] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-28 16:48:08,263] [view.py:54] [view:get_predict_flow] [INFO]- [9a4dc045-f58f-4c02-95b1-e63c7e376d93]:请求成功，任务开始启动
+[2020-09-28 16:48:08,264] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-28 16:48:21,941] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-09-28 16:49:20,442] [view.py:54] [view:get_predict_flow] [INFO]- [81b03e93-67e8-49cf-9739-a81a02c84a17]:请求成功，任务开始启动
+[2020-09-28 16:49:20,442] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-09-28 16:50:12,704] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /healthcheck.do%20 HTTP/1.1" 200 67

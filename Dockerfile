@@ -8,6 +8,7 @@ RUN pip install --upgrade pip -i https://mirrors.aliyun.com/pypi/simple/&&\
         pip install seaborn -i https://mirrors.aliyun.com/pypi/simple/&&\
         pip install matplotlib -i https://mirrors.aliyun.com/pypi/simple/&&\
         pip install keras -i https://mirrors.aliyun.com/pypi/simple/&&\
+        pip install tensorflow -i https://mirrors.aliyun.com/pypi/simple/&&\
         pip install sklearn -i https://mirrors.aliyun.com/pypi/simple/&&\
         pip install tqdm -i https://mirrors.aliyun.com/pypi/simple/
 
@@ -23,8 +24,7 @@ RUN echo 'deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib \
 RUN apt-get -y update &&\
     apt-get install -y git
 
-RUN mkdir /config &&\
-    mkdir /src &&\
+RUN mkdir /src &&\
     cd /src &&\
     git clone  https://github.com/fengzezhong/flowpredict.git
 

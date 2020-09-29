@@ -124,7 +124,7 @@ def predict_oneday(train_data, city, model, scaler):
 
     last_time = datetime.datetime.strptime(str(last_time), '%Y%m%d%H%M')
     for i in range(1, 13):
-        predictday = (last_time + datetime.timedelta(minutes=+i)).strftime("%Y%m%d%H%M")
+        predictday = (last_time + datetime.timedelta(minutes=+i*5)).strftime("%Y%m%d%H%M")
         predict_times.append(predictday)
         citys.append(city)
 
