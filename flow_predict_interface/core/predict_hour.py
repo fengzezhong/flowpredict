@@ -138,6 +138,10 @@ def predict_oneday(train_data, city, model, scaler):
 
 
 def file_handle_and_predict_hour(file_path, work_id, type, is_train):
+
+    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+        print("[" + work_id + "]" + "  开启任务：" + "%", file=f)
+        f.write("[" + work_id + "]" + "  任务开启：进度" + "0%")
     # 设置预测的临时文件
     temp_files_path = os.path.join(settings.DWON_RESU_URL, 'temp_files')
 
@@ -252,3 +256,6 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
             except Exception as e:
                 print('写入异常。。。。。。。')
                 print('错误原因: ' + str(e))
+    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+        print("[" + work_id + "]" + "  任务结束：")
+        f.write("[" + work_id + "]" + "  任务结束：进度" + "100%")

@@ -138,6 +138,11 @@ def predict_oneday(train_data, city, model, scaler):
 
 
 def file_handle_and_predict_min(file_path, work_id, type, is_train):
+
+    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+        print("[" + work_id + "]" + "  开启任务：")
+        f.write("[" + work_id + "]" + "  任务开启：进度" + "0%")
+
     # 设置预测的临时文件
     temp_files_path = os.path.join(settings.DWON_RESU_URL, 'temp_files')
 
@@ -251,27 +256,6 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
             except Exception as e:
                 print('写入异常。。。。。。。')
                 print('错误原因: ' + str(e))
-
-    # # 加工预测生成的文件
-    # files = os.listdir(temp_files_path)
-    # files_len = len(files)
-    # if files_len > 0:
-    #     if work_id in files[0]:
-    #
-    #         # 写入到一个文件中 以任务ID为标识
-    #         with open(os.path.join(settings.DWON_RESU_URL, work_id + '.csv'), 'w+') as f_write:
-    #             for i in range(files_len):
-    #
-    #                 # 获取表头，标识地区
-    #                 lines = open(os.path.join(temp_files_path, files[i])).readlines()
-    #                 one_line = lines[0].split(',')[0] + ','
-    #
-    #                 # 分别读取流量
-    #                 for line in lines:
-    #                     city_day_flow = line.split(',')
-    #                     one_line = one_line + city_day_flow[1] + ':' + str(round(float(city_day_flow[2]), 2)) + ','
-    #                 # print(one_line)
-    #
-    #                 # 写入并删除临时文件
-    #                 f_write.write(one_line + '\n')
-    #                 os.remove(os.path.join(temp_files_path, files[i]))
+    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+        print("[" + work_id + "]" + "  开启结束：")
+        f.write("[" + work_id + "]" + "  任务结束：进度" + "100%")
