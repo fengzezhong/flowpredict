@@ -1,0 +1,6 @@
+[2020-10-09 10:49:11,698] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
+[2020-10-09 10:51:32,755] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
+[2020-10-09 10:52:50,138] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
+[2020-10-09 10:52:59,995] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
+[2020-10-09 10:54:06,465] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
+[2020-10-09 10:56:45,594] [view.py:79] [view:get_predict_flow] [ERROR]- [dd159885-891f-4452-9267-66e662005a85]:Value must be a list, tuple, range or generator, or a dict. Supplied value is <class 'str'>
