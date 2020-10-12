@@ -168,13 +168,17 @@ def FileDown(req):
         work_id = str(req_para["work_id"])
         file_path = os.path.join(settings.DWON_RESU_URL)
         if work_id + ".csv" in os.listdir(file_path):
-            # with open(os.path.join(file_path, work_id + ".xlsx"), 'rb', encoding=utf-8) as file:
-            pd_data = pandas.read_csv(os.path.join(file_path, work_id + ".csv"), skiprows=[0])
-            # print(pd_data)
-            resp = HttpResponse(str(pd_data))
-            resp['Content-Type'] = 'application/octet-stream'
-            resp['Content-Disposition'] = 'attachment;filename="' + work_id + '.csv"'
-            return resp
+            with open(os.path.join(file_path, work_id + ".csv")) as file:
+                resp = HttpResponse(file)
+                resp['Content-Type'] = 'application/octet-stream'
+                resp['Content-Disposition'] = 'attachment;filename="' + work_id + '.csv"'
+                return resp
+            # pd_data = pandas.read_csv(os.path.join(file_path, work_id + ".csv"), skiprows=[0])
+            # # print(pd_data)
+            # resp = HttpResponse(str(pd_data))
+            # resp['Content-Type'] = 'application/octet-stream'
+            # resp['Content-Disposition'] = 'attachment;filename="' + work_id + '.csv"'
+            # return resp
         else:
             return HttpResponse(json.dumps({
                 "code": 201,
