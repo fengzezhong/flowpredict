@@ -182,7 +182,7 @@ def FileDown(req):
         else:
             return HttpResponse(json.dumps({
                 "code": 201,
-                "msg": "request err,please wait mount or find flow path",
+                "msg": "request is wrong,please wait a moment or find  the truth download path",
                 "body": {
                     "ret": "6001"
                 }

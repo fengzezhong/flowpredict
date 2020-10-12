@@ -175,3 +175,31 @@ ValueError: binary mode doesn't take an encoding argument
 [2020-10-12 17:00:40,765] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 298
 [2020-10-12 17:02:13,147] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
 [2020-10-12 17:02:14,219] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-12 21:35:05,073] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-12 21:35:37,245] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-12 21:36:29,767] [view.py:55] [view:get_predict_flow] [INFO]- [021448fc-df6d-4723-8912-e66ffad235c8]:请求成功，任务开始启动
+[2020-10-12 21:36:29,768] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-12 21:36:58,724] [view.py:55] [view:get_predict_flow] [INFO]- [021448fc-df6d-4723-8912-e66ffad235c8]:请求成功，任务开始启动
+[2020-10-12 21:36:58,725] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-12 21:37:02,306] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1868
+[2020-10-12 21:37:11,297] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-10-12 21:37:25,849] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/021448fc-df6d-4723-8912-e66ffad235c8.csv HTTP/1.1" 200 1868
+[2020-10-12 21:37:39,772] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-12 21:38:09,086] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 96
+[2020-10-12 21:38:20,116] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 95
+[2020-10-12 21:38:31,244] [view.py:55] [view:get_predict_flow] [INFO]- [6a5d375c-1b31-4fcf-b6af-58bd0e72be83]:请求成功，任务开始启动
+[2020-10-12 21:38:31,245] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-12 21:38:36,520] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1256
+[2020-10-12 21:38:39,825] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-10-12 21:38:59,687] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/6a5d375c-1b31-4fcf-b6af-58bd0e72be83.csv HTTP/1.1" 200 1256
+[2020-10-12 21:39:08,634] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-12 21:39:26,287] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 96
+[2020-10-12 21:39:34,713] [view.py:55] [view:get_predict_flow] [INFO]- [08dfac3d-44fc-43c0-9387-296e8e6f3e75]:请求成功，任务开始启动
+[2020-10-12 21:39:34,715] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-12 21:41:42,459] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-10-12 21:41:44,371] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-12 21:42:10,365] [view.py:55] [view:get_predict_flow] [INFO]- [08dfac3d-44fc-43c0-9387-296e8e6f3e75]:请求成功，任务开始启动
+[2020-10-12 21:42:10,367] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-12 21:42:17,562] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 1258
+[2020-10-12 21:42:21,552] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-10-12 21:42:26,883] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
