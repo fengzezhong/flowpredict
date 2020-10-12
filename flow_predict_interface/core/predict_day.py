@@ -202,6 +202,9 @@ def file_handle_and_predict_day(file_path, work_id, type, is_train):
                 if is_train == 'train':
                     # 训练模型
                     print('开始训练')
+                    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+                        print("[" + work_id + "]" + "  正在训练：")
+                        f.write("[" + work_id + "]" + "  正在进行任务：进度" + "60%")
                     model = train_model(model, X_train, y_train, config, city, type, model_path)
 
                 elif is_train == 'predict':
@@ -222,39 +225,36 @@ def file_handle_and_predict_day(file_path, work_id, type, is_train):
             # 清理该模型的数据
             K.clear_session()
 
-    result_path = os.path.join(settings.DWON_RESU_URL, work_id + '.xlsx')
+    result_path = os.path.join(settings.DWON_RESU_URL, work_id + '.csv')
     # 加工预测生成的文件
     files = os.listdir(temp_files_path)
     files_len = len(files)
     if files_len > 0:
         if work_id in files[0]:
 
-            one_city_city = []
-            one_city_time = []
-            one_city_flow = []
-            try:
-                # 写入到一个文件中 以任务ID为标识
-                for i in range(files_len):
+            with open(result_path, 'a+') as flow_file:
+                try:
+                    # 写入到一个文件中 以任务ID为标识
+                    for i in range(files_len):
 
-                    # 获取表头，标识地区
-                    lines = open(os.path.join(temp_files_path, files[i])).readlines()
+                        # 获取表头，标识地区
+                        lines = open(os.path.join(temp_files_path, files[i])).readlines()
 
-                    city_name = lines[0].split(',')[0]
-                    print(city_name)
-                    # 分别读取流量
-                    for line in lines:
-                        city_day_flow = line.split(',')
-                        one_city_city.append(city_day_flow[0])
-                        one_city_time.append(city_day_flow[1])
-                        one_city_flow.append(round(float(city_day_flow[2]), 2))
-                    os.remove(os.path.join(temp_files_path, files[i]))
-                one_city_one_all = {'city': one_city_city, 'time': one_city_time, 'flow': one_city_flow}
-                one_city_one_all = pd.DataFrame(one_city_one_all)
-                one_city_one_all.to_excel(result_path, index=False)
+                        city_info = lines[0].split(',')[0] + ', '
+                        # print(city_name)
+                        # 分别读取流量
+                        for line in lines:
+                            city_day_flow = line.split(',')
+                            city_info = city_info + city_day_flow[1] + ': ' + str(
+                                round(float(city_day_flow[2]), 2)) + ', '
 
-            except Exception as e:
-                print('写入异常。。。。。。。')
-                print('错误原因: ' + str(e))
+                        flow_file.write(city_info)
+                        flow_file.write('\n')
+                        os.remove(os.path.join(temp_files_path, files[i]))
+
+                except Exception as e:
+                    print('写入异常。。。。。。。' + '错误原因: ' + str(e))
+
     with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
         print("[" + work_id + "]" + "  开启结束：")
         f.write("[" + work_id + "]" + "  任务结束：进度" + "100%")

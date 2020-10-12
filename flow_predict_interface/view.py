@@ -38,7 +38,7 @@ def get_predict_flow(req):
         try:
 
             upload_url = os.path.join(settings.UPLOAD_URL, work_id + '.csv')
-            down_url = os.path.join(settings.DWON_RESU_URL, work_id + '.xlsx')
+            down_url = os.path.join(settings.DWON_RESU_URL, work_id + '.csv')
 
             # 调试完成后 修改文件名
             if type == 'hour':
@@ -62,7 +62,7 @@ def get_predict_flow(req):
                         # "pre_time": str(
                         #     down_un.get_len() / 4000 + down_un.get_len() / 300000 + down_un.get_len() / 25000),
                         "work_id": work_id,
-                        "download_url": "static/download/" + work_id + ".xlsx",
+                        "download_url": "static/download/" + work_id + ".csv",
 
                     }
                 }))
@@ -103,7 +103,7 @@ def get_resu_process(req):
         work_id = str(req_para["work_id"])
         print(work_id)
 
-        resu_file_url = os.path.join(settings.DWON_RESU_URL, work_id + ".xlsx")
+        resu_file_url = os.path.join(settings.DWON_RESU_URL, work_id + ".csv")
         process_file_url = os.path.join(settings.PROCESS_URL, "process_" + work_id)
 
         if os.path.exists(resu_file_url):
@@ -167,18 +167,18 @@ def FileDown(req):
         req_para = json.loads(req.body)
         work_id = str(req_para["work_id"])
         file_path = os.path.join(settings.DWON_RESU_URL)
-        if work_id + ".xlsx" in os.listdir(file_path):
+        if work_id + ".csv" in os.listdir(file_path):
             # with open(os.path.join(file_path, work_id + ".xlsx"), 'rb', encoding=utf-8) as file:
-            pd_data = pandas.read_excel(os.path.join(file_path, work_id + ".xlsx"), skiprows=[0])
+            pd_data = pandas.read_csv(os.path.join(file_path, work_id + ".csv"), skiprows=[0])
             # print(pd_data)
             resp = HttpResponse(str(pd_data))
             resp['Content-Type'] = 'application/octet-stream'
-            resp['Content-Disposition'] = 'attachment;filename="' + work_id + '.xlsx"'
+            resp['Content-Disposition'] = 'attachment;filename="' + work_id + '.csv"'
             return resp
         else:
             return HttpResponse(json.dumps({
                 "code": 201,
-                "msg": "request err,please use post request",
+                "msg": "request err,please wait mount or find flow path",
                 "body": {
                     "ret": "6001"
                 }
