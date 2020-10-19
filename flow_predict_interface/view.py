@@ -26,14 +26,15 @@ def start(req):
 def get_predict_flow(req):
     if req.method == "POST":
         req_data = json.loads(req.body)
-        work_id = req_data['work_id']
-        type = req_data['type']
-        is_train = req_data['is_train']
 
-        if type is None or type == '':
-            type = 'hour'
-        if is_train is None or type == '':
-            is_train = 'train'
+        work_id = req_data['work_id']
+        type = 'hour'
+        if 'type' in req_data:
+            type = req_data['type']
+
+        is_train = 'train'
+        if 'is_train' in req_data:
+            is_train = req_data['is_train']
 
         try:
 

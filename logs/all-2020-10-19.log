@@ -1,0 +1,22 @@
+[2020-10-19 16:40:06,184] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-19 16:40:48,089] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-19 16:41:21,806] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /get_flow
+Traceback (most recent call last):
+  File "/Applications/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Applications/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py", line 31, in get_predict_flow
+    is_train = req_data['is_train']
+KeyError: 'is_train'
+[2020-10-19 16:41:21,810] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /get_flow HTTP/1.1" 500 145
+[2020-10-19 16:49:03,738] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-10-19 16:49:05,052] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-19 16:49:07,059] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-19 16:49:51,723] [view.py:56] [view:get_predict_flow] [INFO]- [93063633-b1e3-4460-93d1-1b0a1911f625]:请求成功，任务开始启动
+[2020-10-19 16:49:51,726] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-19 16:50:05,463] [view.py:56] [view:get_predict_flow] [INFO]- [93063633-b1e3-4460-93d1-1b0a1911f625]:请求成功，任务开始启动
+[2020-10-19 16:50:05,466] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-19 16:50:20,087] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-19 16:50:54,054] [view.py:56] [view:get_predict_flow] [INFO]- [93063633-b1e3-4460-93d1-1b0a1911f625]:请求成功，任务开始启动
+[2020-10-19 16:50:54,056] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
