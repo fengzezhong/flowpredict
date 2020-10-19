@@ -124,7 +124,7 @@ def get_resu_process(req):
                 with open(process_file_url, 'r') as process:
                     lines = process.readlines()
                 if len(lines) >= 2:
-                    current_process = str(lines[-1]).split("：")[-1].strip()
+                    current_process = str(lines[-1]).split(":")[-1].strip()
                     # if current_process == "100%":
                     #     current_process = "98.7%"
                     return HttpResponse(json.dumps({
