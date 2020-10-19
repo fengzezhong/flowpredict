@@ -1,4 +1,0 @@
-[2020-09-29 09:13:32,376] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
-[2020-09-29 09:14:27,869] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
-[2020-09-29 09:15:10,469] [view.py:54] [view:get_predict_flow] [INFO]- [dd159885-891f-4452-9267-66e662005a85]:请求成功，任务开始启动
-[2020-09-29 09:15:10,470] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192

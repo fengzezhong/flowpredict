@@ -55,7 +55,7 @@ def pre_predict_data(train_data, scaler):
     return X_train, y_train, X_predict, y_predict
 
 
-def train_model(model, X_train, y_train, config, city, type, model_path):
+def train_model(model, X_train, y_train, config, city, type, model_path, work_id):
     '''
     训练模型
     :param model: 训练模型参数
@@ -75,9 +75,10 @@ def train_model(model, X_train, y_train, config, city, type, model_path):
 
     print(model_path)
     # 每个网元保存模型
-    model.save(os.path.join(model_path, config['model_name'] + '_' + city + '_' + type + '.h5'))
+    model.save(os.path.join(model_path, config['model_name'] + '_' + city + '_' + type + '_' + work_id + '.h5'))
     df = pd.DataFrame.from_dict(hist.history)
-    df.to_csv(os.path.join(model_path, config['model_name'] + '_' + city + '_' + type + '_loss.csv'), encoding='utf-8',
+    df.to_csv(os.path.join(model_path, config['model_name'] + '_' + city + '_' + type + '_' + work_id + '_loss.csv'),
+              encoding='utf-8',
               index=False)
 
     return model
@@ -138,10 +139,9 @@ def predict_oneday(train_data, city, model, scaler):
 
 
 def file_handle_and_predict_hour(file_path, work_id, type, is_train):
-
     with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
-        print("[" + work_id + "]" + "  开启任务：" + "%", file=f)
-        f.write("[" + work_id + "]" + "  任务开启：进度" + "0%")
+
+        f.write("[" + work_id + "]" + "  任务开启, 进度: " + "0%" + '\n')
     # 设置预测的临时文件
     temp_files_path = os.path.join(settings.DWON_RESU_URL, 'temp_files')
 
@@ -174,6 +174,8 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
     model_name = config['model_name']
     model = get_lstm([12, 64, 64, 1])
 
+    city_process = round((89.19 / city_len), 2)
+
     i = 0  # 记录类别个数
     # 分别读取每个类别的数据
     for city, city_flow_data in city_flow_datas:
@@ -185,7 +187,6 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
             print('当前城市是: ', city, '是第: ', i, ' 个城市', '总的城市个数: ', city_len)
 
             city_flow_data.set_index(['day'])  # 按时间排序
-
             city_flow_data.fillna(city_flow_data.mean(), inplace=True)  # 空缺值填充
 
             # 全局归一化器
@@ -203,14 +204,12 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
                 if is_train == 'train':
                     # 训练模型
                     print('开始训练')
-                    with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
-                        print("[" + work_id + "]" + "  正在训练：")
-                        f.write("[" + work_id + "]" + "  正在进行任务：进度" + "60%")
-                    model = train_model(model, X_train, y_train, config, city, type, model_path)
+                    model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
 
                 elif is_train == 'predict':
                     # 加载模型
-                    model = load_model(os.path.join(model_path, model_name + '_' + city + '_' + type + '.h5'))
+                    model = load_model(
+                        os.path.join(model_path, model_name + '_' + city + '_' + type + '_' + work_id + '.h5'))
 
                 print('开始预测')
                 # 预测第一天的数据 24小时
@@ -222,6 +221,9 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
 
             except Exception as e:
                 print('模型加载加错，错误原因' + str(e))
+
+            with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
+                f.write("[" + work_id + "]" + "  正在进行任务, 进度: " + str(city_process * i) + '%\n')
 
             # 清理该模型的数据
             K.clear_session()
@@ -289,4 +291,4 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
 
     with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
         print("[" + work_id + "]" + "  任务结束：")
-        f.write("[" + work_id + "]" + "  任务结束：进度" + "100%")
+        f.write("[" + work_id + "]" + "  任务结束, 进度: " + "100%" + '\n')

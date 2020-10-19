@@ -59,8 +59,6 @@ def get_predict_flow(req):
                     "msg": "Check successed.",
                     "body": {
                         "ret": "4000",
-                        # "pre_time": str(
-                        #     down_un.get_len() / 4000 + down_un.get_len() / 300000 + down_un.get_len() / 25000),
                         "work_id": work_id,
                         "download_url": "static/download/" + work_id + ".csv",
 
@@ -107,6 +105,11 @@ def get_resu_process(req):
         process_file_url = os.path.join(settings.PROCESS_URL, "process_" + work_id)
 
         if os.path.exists(resu_file_url):
+            # with open(process_file_url) as file:
+            #     resp = HttpResponse(file)
+            #     resp['Content-Type'] = 'application/octet-stream'
+            #     resp['Content-Disposition'] = 'attachment;filename="' + process_file_url
+            #     return resp
             return HttpResponse(json.dumps({
                 "code": 200,
                 "msg": "task complete",
@@ -121,8 +124,8 @@ def get_resu_process(req):
                     lines = process.readlines()
                 if len(lines) >= 2:
                     current_process = str(lines[-1]).split("：")[-1].strip()
-                    if current_process == "100%":
-                        current_process = "98.7%"
+                    # if current_process == "100%":
+                    #     current_process = "98.7%"
                     return HttpResponse(json.dumps({
                         "code": 200,
                         "msg": "task in progress",
