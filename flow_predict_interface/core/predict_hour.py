@@ -65,13 +65,21 @@ def train_model(model, X_train, y_train, config, city, type, model_path, work_id
     :param config:  模型配置参数
     :return:
     '''
+    batch_size = config["batch"]
+    epochs = config["epochs"]
+
+    def generate_arrays_from_data(X_train, y_train, size):
+        while 1:
+            for i in range(0, len(y_train), size):
+                x = X_train[i:i + size]
+                y = y_train[i:i + size]
+                yield (x, y)
+
     model.compile(loss="mse", optimizer="adam", metrics=['mape'])
-    # early = EarlyStopping(monitor='val_loss', patience=30, verbose=0, mode='auto')
-    hist = model.fit(
-        X_train, y_train,
-        batch_size=config["batch"],
-        epochs=config["epochs"],
-        validation_split=0.05)
+
+    hist = model.fit_generator(generator=generate_arrays_from_data(X_train, y_train, batch_size),
+                               steps_per_epoch=len(y_train) // batch_size,
+                               epochs=epochs)
 
     print(model_path)
     # 每个网元保存模型
@@ -143,10 +151,10 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
 
         f.write("[" + work_id + "]" + "  任务开启, 进度: " + "0%" + '\n')
     # 设置预测的临时文件
-    temp_files_path = os.path.join(settings.DWON_RESU_URL, 'temp_files')
+    temp_files_path = os.path.join(settings.DOWN_RESU_URL, 'temp_files')
 
     # 保存模型的文件
-    model_path = os.path.join(settings.DWON_RESU_URL, 'models')
+    model_path = os.path.join(settings.DOWN_RESU_URL, 'models')
 
     if not os.path.exists(temp_files_path):
         os.mkdir(temp_files_path)
@@ -229,7 +237,7 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
             K.clear_session()
 
     ##### excel加工类型备份
-    # result_path = os.path.join(settings.DWON_RESU_URL, work_id + '.xlsx')
+    # result_path = os.path.join(settings.DOWN_RESU_URL, work_id + '.xlsx')
     # # 加工预测生成的文件
     # files = os.listdir(temp_files_path)
     # files_len = len(files)
@@ -259,7 +267,7 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
     #             one_city_one_all = pd.DataFrame(one_city_one_all)
     #             one_city_one_all.to_excel(result_path, index=False)
 
-    result_path = os.path.join(settings.DWON_RESU_URL, work_id + '.csv')
+    result_path = os.path.join(settings.DOWN_RESU_URL, work_id + '.csv')
     # 加工预测生成的文件
     files = os.listdir(temp_files_path)
     files_len = len(files)

@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}), #查询文件
     url(r'get_download_resu', view.FileDown),  # 获取下载结果
     url(r'upload_file', view.FileUp),  # 上传文件
+    url(r'remove_files', view.RemoveFile),  # 上传文件
 ]

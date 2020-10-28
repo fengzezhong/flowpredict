@@ -1,0 +1,9 @@
+[2020-10-22 15:44:59,426] [view.py:56] [view:get_predict_flow] [INFO]- [93063633-b1e3-4460-93d1-1b0a1911f625]:请求成功，任务开始启动
+[2020-10-22 15:45:49,368] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:46:31,171] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:46:38,629] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:52:04,501] [view.py:79] [view:get_predict_flow] [ERROR]- [6745ec5a-22b2-4b1e-9c0a-62fa698ecb72]:Error tokenizing data. C error: Expected 3 fields in line 8929, saw 5
+

@@ -1,0 +1,34 @@
+[2020-10-22 15:43:40,827] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-22 15:44:59,426] [view.py:56] [view:get_predict_flow] [INFO]- [93063633-b1e3-4460-93d1-1b0a1911f625]:请求成功，任务开始启动
+[2020-10-22 15:44:59,430] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-22 15:45:15,599] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-22 15:45:49,368] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:45:49,373] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-10-22 15:46:31,171] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:46:31,171] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-10-22 15:46:38,629] [view.py:79] [view:get_predict_flow] [ERROR]- [c67e92f0-d4b4-4468-9eeb-6b10a5f3c726]:Error tokenizing data. C error: Expected 3 fields in line 26786, saw 5
+
+[2020-10-22 15:46:38,630] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-10-22 15:51:40,571] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-22 15:52:04,501] [view.py:79] [view:get_predict_flow] [ERROR]- [6745ec5a-22b2-4b1e-9c0a-62fa698ecb72]:Error tokenizing data. C error: Expected 3 fields in line 8929, saw 5
+
+[2020-10-22 15:52:04,504] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 66
+[2020-10-22 15:56:16,695] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-22 16:01:15,405] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 85
+[2020-10-22 16:01:48,525] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 119
+[2020-10-22 16:03:51,982] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 85
+[2020-10-22 16:04:02,046] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 119
+[2020-10-22 16:08:34,515] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 84
+[2020-10-22 16:21:55,837] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:22:01,052] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:28:02,826] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:36:27,006] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:36:35,868] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:36:41,031] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_download_resu HTTP/1.1" 200 119
+[2020-10-22 16:39:59,039] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 16:40:44,461] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 99
+[2020-10-22 16:48:08,210] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 17:10:06,123] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-22 17:10:08,870] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
