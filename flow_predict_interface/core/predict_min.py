@@ -185,7 +185,6 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
 
     # 配置LSTM训练参数
     model_name = config['model_name']
-    model = get_lstm([12, 64, 64, 1])
 
     city_process = round((89.13 / city_len), 2)
 
@@ -216,6 +215,8 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
 
             try:
                 if is_train == 'train':
+
+                    model = get_lstm([12, 64, 64, 1])
 
                     # 训练模型
                     print('开始训练')

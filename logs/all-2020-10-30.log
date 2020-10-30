@@ -12,3 +12,9 @@
 [2020-10-30 12:16:21,241] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 85
 [2020-10-30 12:19:00,010] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
 [2020-10-30 12:19:02,812] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-30 14:30:39,749] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-30 14:32:05,423] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_min.py changed, reloading.
+[2020-10-30 14:32:06,866] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-30 14:32:12,667] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-30 14:34:08,711] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/core/predict_hour.py changed, reloading.
+[2020-10-30 14:34:10,068] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
