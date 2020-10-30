@@ -5,6 +5,7 @@ from .core.predict_day import file_handle_and_predict_day
 from .core.predict_min import file_handle_and_predict_min
 
 import threading
+import multiprocessing
 import os
 import json
 import logging
@@ -49,12 +50,17 @@ def get_predict_flow(req):
             elif type == 'min':
                 predict_f = file_handle_and_predict_min(settings.UPLOAD_URL, work_id, type, is_train)
 
-            core_thread = threading.Thread(target=predict_f)
+            # 多线程
+            # core_thread = threading.Thread(target=predict_f)
+            # 多进程
+            core_thread = multiprocessing.Process(target=predict_f)
 
             try:
-                core_thread.start()
+
                 logger.info("[" + work_id + "]:请求成功，任务开始启动")
 
+                core_thread.start()
+                core_thread.join()
                 return HttpResponse(json.dumps({
                     "code": 200,
                     "msg": "Check successed.",

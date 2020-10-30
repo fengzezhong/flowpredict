@@ -1,0 +1,15 @@
+[2020-10-29 14:29:04,002] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-29 14:30:18,452] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-29 14:31:34,681] [view.py:56] [view:get_predict_flow] [INFO]- [f20157b0-058c-4086-8e53-eb1e71bfefb3]:请求成功，任务开始启动
+[2020-10-29 14:31:34,682] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-29 14:32:02,830] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81
+[2020-10-29 14:32:33,662] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/download/f20157b0-058c-4086-8e53-eb1e71bfefb3.csv HTTP/1.1" 200 1579
+[2020-10-29 14:33:11,689] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-29 14:33:26,454] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 82
+[2020-10-29 14:33:28,776] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 82
+[2020-10-29 14:33:32,161] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-29 14:33:44,334] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-29 14:34:16,010] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 86
+[2020-10-29 14:34:19,491] [view.py:56] [view:get_predict_flow] [INFO]- [e20f8764-2aac-4cc4-913b-af0710e77ff0]:请求成功，任务开始启动
+[2020-10-29 14:34:19,492] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-29 14:34:21,304] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_resu_process HTTP/1.1" 200 81

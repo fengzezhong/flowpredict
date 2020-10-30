@@ -1,0 +1,6 @@
+[2020-10-30 10:36:16,606] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2020-10-30 10:36:44,169] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /upload_file HTTP/1.1" 200 184
+[2020-10-30 10:38:23,099] [view.py:58] [view:get_predict_flow] [INFO]- [22fa99aa-cb70-4b3f-944c-4ba3e6d210d6]:请求成功，任务开始启动
+[2020-10-30 10:38:23,119] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /get_flow HTTP/1.1" 200 192
+[2020-10-30 10:39:15,171] [autoreload.py:236] [autoreload:trigger_reload] [INFO]- /Users/fengdong/PycharmProjects/flowpredict000/flowpredict/flow_predict_interface/view.py changed, reloading.
+[2020-10-30 10:39:17,526] [autoreload.py:612] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
