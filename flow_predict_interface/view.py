@@ -9,7 +9,7 @@ import multiprocessing
 import os
 import json
 import logging
-import pandas
+
 
 logger = logging.getLogger('log')
 
