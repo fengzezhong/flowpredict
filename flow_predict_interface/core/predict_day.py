@@ -212,17 +212,17 @@ def file_handle_and_predict_day(file_path, work_id, type, is_train):
                 if is_train == 'train':
 
                     print('开始训练')
-                    model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
+                    predict_model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
 
                 elif is_train == 'predict':
 
                     # 加载模型
-                    model = load_model(
+                    predict_model = load_model(
                         os.path.join(model_path, model_name + '_' + city + '_' + type + '_' + work_id + '.h5'))
 
                 print('开始预测')
                 # 预测第一天的数据 24小时
-                train_data, pare_hour_datas = predict_oneday(city_flow_data, city, model, scaler)
+                train_data, pare_hour_datas = predict_oneday(city_flow_data, city, predict_model, scaler)
 
                 # 保存到暂存目录
                 save_path = os.path.join(temp_files_path, work_id + '_' + city + '.csv')

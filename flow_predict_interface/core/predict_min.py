@@ -19,7 +19,6 @@ from keras.layers import Dense, LSTM, Dropout
 
 from keras import backend as K
 
-
 def pre_predict_data(train_data, scaler):
     '''
     处理训练数据，得到训练集、测试集
@@ -222,16 +221,16 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
                     # with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
                     #     print("[" + work_id + "]" + "  正在训练：")
                     #     f.write("[" + work_id + "]" + "  正在进行任务：进度" + "56.83%" + '\n')
-                    model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
+                    predict_model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
 
                 elif is_train == 'predict':
                     # 加载模型
-                    model = load_model(
+                    predict_model = load_model(
                         os.path.join(model_path, model_name + '_' + city + '_' + type + '_' + work_id + '.h5'))
 
                 print('开始预测')
                 # 预测第一天的数据 24小时
-                train_data, pare_hour_datas = predict_oneday(city_flow_data, city, model, scaler)
+                train_data, pare_hour_datas = predict_oneday(city_flow_data, city, predict_model, scaler)
 
                 # 保存到暂存目录
                 save_path = os.path.join(temp_files_path, work_id + '_' + city + '.csv')
@@ -242,6 +241,7 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
 
             # 清理该模型的数据
             K.clear_session()
+
 
             with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
                 f.write("[" + work_id + "]" + "  正在进行任务, 进度: " + str(city_process * i) + '%\n')
