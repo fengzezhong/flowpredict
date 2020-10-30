@@ -58,7 +58,6 @@ def get_predict_flow(req):
             try:
 
                 logger.info("[" + work_id + "]:请求成功，任务开始启动")
-
                 core_thread.start()
                 core_thread.join()
                 return HttpResponse(json.dumps({
