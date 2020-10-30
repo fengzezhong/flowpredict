@@ -216,6 +216,7 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
 
             try:
                 if is_train == 'train':
+
                     # 训练模型
                     print('开始训练')
                     # with open(os.path.join(settings.PROCESS_URL, 'process_' + work_id), 'a+') as f:
@@ -224,6 +225,7 @@ def file_handle_and_predict_min(file_path, work_id, type, is_train):
                     predict_model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
 
                 elif is_train == 'predict':
+
                     # 加载模型
                     predict_model = load_model(
                         os.path.join(model_path, model_name + '_' + city + '_' + type + '_' + work_id + '.h5'))

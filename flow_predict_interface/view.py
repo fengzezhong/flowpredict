@@ -26,6 +26,7 @@ def start(req):
 # 请求告警回应
 def get_predict_flow(req):
     if req.method == "POST":
+
         req_data = json.loads(req.body)
 
         work_id = req_data['work_id']
