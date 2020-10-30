@@ -211,6 +211,7 @@ def file_handle_and_predict_hour(file_path, work_id, type, is_train):
                 if is_train == 'train':
 
                     model = get_lstm([12, 64, 64, 1])
+
                     # 训练模型
                     print('开始训练')
                     predict_model = train_model(model, X_train, y_train, config, city, type, model_path, work_id)
