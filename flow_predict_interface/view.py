@@ -10,7 +10,6 @@ import os
 import json
 import logging
 
-
 logger = logging.getLogger('log')
 
 from uuid import uuid4
@@ -265,12 +264,10 @@ def FileUp(request):
         }
     }))
 
-
 def RemoveFile(request):
     if request.method == 'POST':
 
         model_path = os.path.join(settings.DOWN_RESU_URL, 'models')
-
         # 删除上传的文件
         upload_files = os.listdir(settings.UPLOAD_URL)
         # 删除结果的文件
@@ -283,7 +280,6 @@ def RemoveFile(request):
 
         try:
             for file in upload_files:
-
                 if os.path.isfile(os.path.join(settings.UPLOAD_URL, file)):
                     os.remove(os.path.join(settings.UPLOAD_URL, file))
 
@@ -320,8 +316,6 @@ def RemoveFile(request):
                     "ret": "6000"
                 }
             }))
-
-
     else:
         return HttpResponse(json.dumps({
             "code": 201,
